@@ -108,6 +108,14 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
  * Animate
  */
 
+document.addEventListener('mousemove', animateTerrain)
+
+let mouseY = 0
+
+function animateTerrain(event){
+    mouseY = event.clientY
+}
+
 const clock = new THREE.Clock()
 
 const tick = () =>
@@ -119,6 +127,7 @@ const tick = () =>
     // sphere.rotation.y = .5 * elapsedTime
 
     plane.rotation.z = .5 * elapsedTime
+    plane.material.displacementScale = 0.3 + mouseY * 0.0008
     // Update Orbital Controls
     // controls.update()
 
