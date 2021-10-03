@@ -2,6 +2,7 @@ import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
+import gsap from 'gsap'
 
 
 // Texture Loader
@@ -17,6 +18,7 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 const geometry = new THREE.PlaneBufferGeometry(1, 1.3)
+
 for(let i = 0; i < 4; i++){
     const material = new THREE.MeshBasicMaterial({
         map: texttureLoader.load(`/photographs/${i}.jpg`)
@@ -27,6 +29,13 @@ for(let i = 0; i < 4; i++){
 
     scene.add(img)
 }
+
+let objs = []
+
+scene.traverse((Object) => {
+    if(Object.isMesh)
+    objs.push(Object)
+})
 
 
 // Lights
@@ -95,9 +104,18 @@ let position = 0
 function onMouseWhell(event){
     y = event.deltaY * 0.0007
 }
+
+const mouse = new THREE.Vector2();
+
+window.addEventListener("mousemove", (event) => {
+    mouse.x = (event.clientX / sizes.width) * 2 - 1;
+    mouse.y = -(event.clientY / sizes.height) * 2 + 1;
+});
 /**
  * Animate
  */
+
+const raycaster = new THREE.Raycaster()
 
 const clock = new THREE.Clock()
 
@@ -107,8 +125,30 @@ const tick = () =>
     const elapsedTime = clock.getElapsedTime()
 
     // Update objects
-    position += y
+    // -로 해야지 일반적인 스크롤
+    position -= y
+    y  *= .9
+
+    // Raycaster
+    raycaster.setFromCamera(mouse, camera)
+    const intersects = raycaster.intersectObjects(objs)
+    
+    for (const intersect of intersects) {
+        gsap.to(intersect.object.scale, { x: 1.7, y: 1.7 });
+        gsap.to(intersect.object.rotation, { y: -.5 });
+        gsap.to(intersect.object.position, { z: -.9 });
+      }
+
+      for (const object of objs) {
+        if (!intersects.find((intersect) => intersect.object === object)) {
+          gsap.to(object.scale, { x: 1, y: 1 });
+          gsap.to(object.rotation, { y: 0 });
+          gsap.to(object.position, { z: 0 });
+        }
+      }
+
     camera.position.y = position
+
     // Update Orbital Controls
     // controls.update()
 
