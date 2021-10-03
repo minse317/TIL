@@ -9,6 +9,7 @@ body
 {
     height: 100vh;
     font-family: 'Poppins';
+    color: white;
 }
 
 .webgl
@@ -17,4 +18,50 @@ body
     top: 0;
     left: 0;
     outline: none;
+}
+
+.content {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-size: 6em;
+    color: rgb(255, 192, 203);
+    font-weight: bold;
+    margin-left: 10vw;
+    margin-top: 3vw;
+}
+
+.goWeb {
+    font-size: 2em;
+    color: black;
+    background-color: rgb(255, 192, 203);
+    width: 8em;    
+    text-decoration: none;
+    font-weight: bold;  
+    text-align: center;
+    margin-left: 10vw;
+    margin-top: -20em;
+    border-radius: 5em;
+    transition: .5s;
+}
+
+.goWeb:hover{
+    font-size: 2em;
+    color: rgb(255, 192, 203);
+    background-color: black;
+    width: 8em;    
+    text-decoration: none;
+    font-weight: bold;  
+    text-align: center;
+    margin-left: 10vw;
+    margin-top: -20em;
+    border-radius: 5em;
+    border-color: rgb(255, 192, 203);
+    border-style: solid;
 }

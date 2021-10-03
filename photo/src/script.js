@@ -135,8 +135,8 @@ const tick = () =>
     
     for (const intersect of intersects) {
         gsap.to(intersect.object.scale, { x: 1.7, y: 1.7 });
-        gsap.to(intersect.object.rotation, { y: -.5 });
-        gsap.to(intersect.object.position, { z: -.9 });
+        gsap.to(intersect.object.rotation, { y: -0.5 });
+        gsap.to(intersect.object.position, { z: -0.9 });
       }
 
       for (const object of objs) {
