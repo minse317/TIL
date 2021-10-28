@@ -17,7 +17,7 @@ section {
 .gooey span {
     width: 100px;
     height: 100px;
-    background: black;
+    background: rgb(76, 204, 255);
     display: inline-block;
     border-radius: 50%;
     filter: blur(25px);

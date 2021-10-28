@@ -6,3 +6,7 @@
   * [YOUTUBE](https://www.youtube.com/watch?v=rE8eZktwyV8)
 ## [SURFING](surfing)<BR>
  * [YOUTUBE](https://www.youtube.com/watch?v=2AQLMZwQpDo)
+## [LAMP](Lamp)<BR>
+ * [YOUTUBE](https://www.youtube.com/watch?v=RlC1bawrcbk&list=LL&index=4)
+ ## [GOOEY](gooey)<BR>
+ * [YOUTUBE](https://www.youtube.com/watch?v=0gYy73USS1M&list=LL&index=2)
