@@ -1,16 +1,16 @@
 # study
 
-## [BLACKPINK](blackpink)<BR>
+### [BLACKPINK]<BR>
   * [YOUTUBE](https://www.youtube.com/watch?v=U29j5NiSMVQ&t=685s)
-## [PAINT](paintjs)<BR>
+### [PAINT]<BR>
   * [YOUTUBE](https://www.youtube.com/watch?v=rE8eZktwyV8)
-## [SURFING](surfing)<BR>
+### [SURFING]<BR>
  * [YOUTUBE](https://www.youtube.com/watch?v=2AQLMZwQpDo)
-## [LAMP](Lamp)<BR>
+### [LAMP]<BR>
  * [YOUTUBE](https://www.youtube.com/watch?v=RlC1bawrcbk&list=LL&index=4)
-## [GOOEY](gooey)<BR>
+### [GOOEY]<BR>
  * [YOUTUBE](https://www.youtube.com/watch?v=0gYy73USS1M&list=LL&index=2)
-## [GAME](game)
+### [GAME]
  * [YOUTUBE](https://www.youtube.com/watch?v=bG2BmmYr9NQ&list=LL&index=1)
-## [CALCULATOR](Calculator)
+### [CALCULATOR]
  * [YOUTUBE](https://www.youtube.com/watch?v=j59qQ7YWLxw)
