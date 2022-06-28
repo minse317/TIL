@@ -1,4 +1,4 @@
-# study
+# Today I Learned
 
 ### BLACKPINK<BR>
   * [YOUTUBE](https://www.youtube.com/watch?v=U29j5NiSMVQ&t=685s)
