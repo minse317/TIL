@@ -14,3 +14,5 @@
  * [YOUTUBE](https://www.youtube.com/watch?v=bG2BmmYr9NQ&list=LL&index=1)
 ### CALCULATOR
  * [YOUTUBE](https://www.youtube.com/watch?v=j59qQ7YWLxw)
+### WEATHER
+ * [YOUTUBE](https://www.youtube.com/watch?v=RVUMJUIwT2A&list=LL&index=8&t=381s)
