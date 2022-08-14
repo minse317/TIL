@@ -16,3 +16,5 @@
  * [YOUTUBE](https://www.youtube.com/watch?v=j59qQ7YWLxw)
 ### WEATHER
  * [YOUTUBE](https://www.youtube.com/watch?v=RVUMJUIwT2A&list=LL&index=8&t=381s)
+### ZeroCho ES2021 자바스크립트 강좌
+ * [YOUTUBE](https://www.youtube.com/watch?v=2yGhb-z8VTQ&list=PLcqDmjxt30RvEEN6eUCcSrrH-hKjCT4wt)
